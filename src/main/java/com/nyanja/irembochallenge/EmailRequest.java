@@ -1,21 +1,33 @@
 package com.nyanja.irembochallenge;
 
-import lombok.Getter;
-import lombok.Setter;
+import java.util.Date;
 
-@Getter @Setter
 public class EmailRequest {
     private String email;
+    private String phoneNumber;
     private String otherNames;
     private String surname;
     private String applicantCitizenship;
-    private String nationality;
+    private String passportNumber;
+    private String idNumber;
+    private String ownerAddress;
+    private String businessType;
     private String companyName;
+    private String companyAddress;
+    private Date regDate;
     private String tinNumber;
     private String productName;
     private String description;
     private String quantity;
     private String unit;
+
+    public String getOwnerAddress() {
+        return ownerAddress;
+    }
+
+    public void setOwnerAddress(String ownerAddress) {
+        this.ownerAddress = ownerAddress;
+    }
 
     public String getEmail() {
         return email;
@@ -49,12 +61,20 @@ public class EmailRequest {
         this.applicantCitizenship = applicantCitizenship;
     }
 
-    public String getNationality() {
-        return nationality;
+    public String getPassportNumber() {
+        return passportNumber;
     }
 
-    public void setNationality(String nationality) {
-        this.nationality = nationality;
+    public void setPassportNumber(String passportNumber) {
+        this.passportNumber = passportNumber;
+    }
+
+    public String getIdNumber() {
+        return idNumber;
+    }
+
+    public void setIdNumber(String idNumber) {
+        this.idNumber = idNumber;
     }
 
     public String getCompanyName() {
@@ -104,4 +124,37 @@ public class EmailRequest {
     public void setUnit(String unit) {
         this.unit = unit;
     }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
+    public String getBusinessType() {
+        return businessType;
+    }
+
+    public void setBusinessType(String businessType) {
+        this.businessType = businessType;
+    }
+
+    public String getCompanyAddress() {
+        return companyAddress;
+    }
+
+    public void setCompanyAddress(String companyAddress) {
+        this.companyAddress = companyAddress;
+    }
+
+    public Date getRegDate() {
+        return regDate;
+    }
+
+    public void setRegDate(Date regDate) {
+        this.regDate = regDate;
+    }
+
 }
